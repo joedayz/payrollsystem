@@ -34,7 +34,7 @@ pipeline {
         stage('Deploy to Tomcat') {
             steps {
                 dir('payroll') {
-                    sh 'copy target\\*.war /Users/josediaz/Tools/apache-tomcat-10.1.34/webapps'
+                    sh 'cp target/*.war /Users/josediaz/Tools/apache-tomcat-10.1.34/webapps'
                 }
             }
         }
